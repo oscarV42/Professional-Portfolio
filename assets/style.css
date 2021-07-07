@@ -1,39 +1,51 @@
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   background-color: #fbeec1;
-  box-shadow: inset 24rem 0 0 0 #8d705727;
+  box-shadow: inset 17rem 0 0 0 #8d705727;
 }
 
 .header {
-  /* background-color: #e27d60; */
   background-color: #daad86;
   padding-top: 25px;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   box-shadow: inset 0.1rem 0.1rem 0.1rem 0.25rem #8d705763;
 }
 
 .header h1 {
-  display: inline-block;
-  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  /* margin-left: 50px;
   margin-bottom: 10px;
   padding-left: 50px;
-  padding-right: 5px;
-  font-size: 40px;
+  padding-right: 5px; */
+  margin-bottom: 10px;
+  font-size: 50px;
   color: #659dbd;
   background-color: #fbeec1;
-  box-shadow: inset 0.1em 0.1rem 0.1rem 0.1rem #8d70574f;
+  box-shadow: inset 0em 0.1rem 0.1rem 0.25rem #8d705763;
 }
 
-.header nav {
-  float: right;
-  margin-right: 20px;
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #8d705785;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 20px;
+  margin-top: 20px;
+  box-shadow: inset 0em 0.1rem 0.1rem 0.25rem #daad863d;
 }
 
-.header nav ul li {
-  margin-top: 5px;
-  display: inline-block;
-  margin-left: 25px;
+nav ul li {
+  font-size: 30px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  align-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  text-align: center;
 }
 
 .aboutme {
@@ -45,22 +57,124 @@ body {
 }
 
 .aboutme h2 {
-  font-size: 35px;
+  font-size: 45px;
   margin-right: 10px;
+  background-image: url(./images/avatar.png);
+  background-size: 50%;
   /* border-right: 2px solid black; */
-  border-spacing: 10px;
 }
 
 .aboutme p {
-  margin-left: 25px;
+  margin-left: 5%;
+  margin-right: 10%;
   border-left: 2px solid black;
   border-spacing: 5px;
+  font-size: 25px;
 }
 
-a {
+.work {
+  font-size: 20px;
+  margin-top: 25px;
+  margin-left: 20%;
+  padding: 5px 5px 5px 5px;
+}
+
+.work h2 {
+  font-size: 45px;
+  margin-right: 10px;
+}
+
+.work ul li {
+  float: left;
+  flex-direction: row;
+  margin-left: 40px;
+  margin-bottom: 50px;
+  width: 450px;
+  height: 400px;
+  text-align: end;
+  font-size: 25px;
+  background-image: url(/assets/images/download.jpg);
+  background-size: 150%;
+  border-radius: 50%;
   color: #659dbd;
-  border-bottom: 3px solid #659dbd;
+}
+
+/* .work h3 {
+  display: none;
+  float: right;
+  color: #659dbd;
+  font-size: 25px;
+  position: relative;
+  padding-inline-start: 25px;
+  padding-inline-end: 15px;
+  background-color: #daad86;
+  border-radius: 25%;
+} */
+#code-refactor:hover {
+  background-image: url(./images/01-html-css-git-homework-demo.png);
+  background-size: 100%;
+  background-position: 50%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  box-shadow: inset 0px 0px 25px #8d8741, 0 0 25px #8d8741;
+}
+#flexbox-cheatsheet:hover {
+  background-image: url(./images/01-app-desktop.png);
+  background-size: 100%;
+  background-position: 50%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  box-shadow: inset 0px 0px 25px #8d8741, 0 0 25px #8d8741;
+}
+
+#coming-soon:hover {
+  box-shadow: inset 0px 0px 25px #8d8741, 0 0 25px #8d8741;
+}
+
+footer {
+  display: flexbox;
+  background-color: #8d8741;
+  padding: 30px;
+  clear: both;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+}
+
+footer h2 {
+  color: #659dbd;
+  text-align: center;
+  background-color: #daad86;
+  margin-bottom: 10px;
+  padding: 5px 5px 5px 5px;
+  box-shadow: inset 10rem 0rem 0rem 0rem #8d705757;
+  font-size: 40px;
+  border-radius: 50%;
+}
+
+footer ul {
+  flex-direction: column;
+}
+
+footer ul li {
+  justify-content: space-around;
+  font-size: 25px;
+}
+a {
+  color: #266488;
+  border-bottom: 2px solid #266488;
 }
 a:link {
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: block;
+    flex-direction: column;
+  }
+  nav ul li {
+    float: right;
+    margin-right: 25px;
+  }
 }
