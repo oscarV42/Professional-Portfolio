@@ -8,6 +8,6 @@ I learned a little more about flex properties, they may still be confusing but I
 
 Although the page my look amature, it's a start and can always be improved as i continue to do more work.
 
-assets\images\Capture.PNG
+<img src="assets\images\Capture.PNG" alt="website screenshot">
 
 https://oscarv42.github.io/Professional-Portfolio/
