@@ -1,11 +1,14 @@
+/* setting our display and background style */
 body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background-color: #fbeec1;
   box-shadow: inset 0px 0px 50px #8d8741, 0 0 50px #8d8741;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+/* header background and layout */
 .header {
   background-color: #daad86;
   padding-top: 25px;
@@ -13,13 +16,10 @@ body {
   box-shadow: inset 0.1rem 0.1rem 0.1rem 0.25rem #8d705763;
 }
 
+/* giving the header title (my name) style, using flex */
 .header h1 {
   display: flex;
   justify-content: center;
-  /* margin-left: 50px;
-  margin-bottom: 10px;
-  padding-left: 50px;
-  padding-right: 5px; */
   margin-bottom: 10px;
   font-size: 50px;
   color: #659dbd;
@@ -27,6 +27,7 @@ body {
   box-shadow: inset 0em 0.1rem 0.1rem 0.25rem #8d705763;
 }
 
+/* setting our nav section layout */
 nav {
   display: flex;
   justify-content: space-around;
@@ -36,48 +37,53 @@ nav {
   box-shadow: inset 0em 0.1rem 0.1rem 0.25rem #daad863d;
 }
 
+/* setting nav link font size and margins */
 nav ul li {
   font-size: 30px;
   margin-bottom: 15px;
   margin-top: 15px;
 }
 
-nav a {
-  text-decoration: none;
-}
-
+/* about me section layout using flexbox */
 .aboutme {
   display: flexbox;
   font-size: 20px;
   margin-top: 5%;
-  margin-left: 10%;
+  margin-left: 5%;
   padding: 5px 5px 5px 5px;
 }
 
+/* styling my proflie image */
 .aboutme img {
   align-content: center;
   width: 200px;
   height: 250px;
   border-style: dotted;
   border-radius: 50%;
+  box-shadow: inset 0px 0px 50px #8d8741, 0 0 50px #8d8741;
 }
 
+/* styling about me section header */
 .aboutme h2 {
   flex-wrap: wrap;
   font-size: 45px;
   margin-right: 10px;
-  /* border-right: 2px solid black; */
+  margin-bottom: 50px;
 }
 
+/* setting our line height and text indent for the paragraph about me */
 .aboutme p {
-  margin-left: 7%;
+  text-indent: 25px;
+  line-height: 35px;
+  margin-left: 5%;
   margin-right: 10%;
   border-left: 4px solid #8d87417e;
   font-size: 25px;
 }
 
+/* setting our work section layout */
 .work {
-  display: inline;
+  display: flex;
   flex-flow: row wrap;
   font-size: 20px;
   margin-top: 5%;
@@ -86,31 +92,31 @@ nav a {
   padding: 5px 5px 5px 5px;
 }
 
+/* styling work header */
 .work h2 {
   margin: 15px;
+  margin-bottom: 100px;
   text-align: center;
   font-size: 45px;
 }
 
+/* setting a border to the left of our work content */
 .work ul {
   border-left: 4px solid #8d87417e;
 }
 
-.work ul li {
+/* setting our image links relative to a smaller screen device */
+.work ul li img {
+  object-fit: cover;
   margin-bottom: 15px;
-  margin-left: 15px;
-  width: 225px;
-  height: 200px;
-  text-align: end;
-  font-size: 25px;
-  background-image: url(/assets/images/computer_programming.jpg);
-  background-size: 150%;
+  margin-left: 5px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
-  color: #659dbd;
 }
 
-/* .work h3 {
-  display: none;
+/* styling our work content headers to be positioned with their relative image */
+.work h3 {
   float: right;
   color: #659dbd;
   font-size: 25px;
@@ -119,27 +125,23 @@ nav a {
   padding-inline-end: 15px;
   background-color: #daad86;
   border-radius: 25%;
-} */
-
-#code-refactor:hover {
-  background-image: url(./images/01-html-css-git-homework-demo.png);
-  background-size: 100%;
-  background-position: 50%;
-  border-radius: 50%;
-  box-shadow: inset 0px 0px 25px #8d8741, 0 0 25px #8d8741;
-}
-#flexbox-cheatsheet:hover {
-  background-image: url(./images/01-app-desktop.png);
-  background-size: 100%;
-  background-position: 50%;
-  border-radius: 50%;
-  box-shadow: inset 0px 0px 25px #8d8741, 0 0 25px #8d8741;
 }
 
-#coming-soon:hover {
-  box-shadow: inset 0px 0px 25px #8d8741, 0 0 25px #8d8741;
+/* setting a box shadow when the user hovers over the image while the headers are always shadowed */
+#code-refactor img:hover,
+h3 {
+  box-shadow: inset 0px 0px 30px #8d8741, 0 0 30px #8d8741;
 }
 
+#flexbox-cheatsheet img:hover {
+  box-shadow: inset 0px 0px 30px #8d8741, 0 0 30px #8d8741;
+}
+
+#coming-soon img:hover {
+  box-shadow: inset 0px 0px 30px #8d8741, 0 0 30px #8d8741;
+}
+
+/* setting our fotter layout */
 footer {
   display: flexbox;
   background-color: #8d8741;
@@ -150,6 +152,7 @@ footer {
   text-align: center;
 }
 
+/* footer header to be centered and have its own inset box shadow */
 footer h2 {
   color: #659dbd;
   text-align: center;
@@ -161,23 +164,24 @@ footer h2 {
   border-radius: 50%;
 }
 
-footer ul {
-  flex-direction: column;
-}
-
+/* setting my contact links style */
 footer ul li {
   justify-content: space-around;
   font-size: 25px;
   margin: 15px;
 }
+
+/* adding color to every link on the website */
 a {
   color: #266488;
-  border-bottom: 2px solid #266488;
 }
+
+/* removing the underline of each link in the website */
 a:link {
   text-decoration: none;
 }
 
+/* screen responsivity above 768px in width */
 @media screen and (min-width: 768px) {
   nav {
     display: block;
@@ -191,16 +195,22 @@ a:link {
     display: inline-flex;
   }
   .aboutme img {
+    margin-right: 5%;
     width: 400px;
     height: 400px;
   }
 
   .work ul li {
+    margin-bottom: 25px;
+  }
+
+  .work ul li img {
     width: 400px;
     height: 400px;
   }
 }
 
+/* screen responsivity above 962px in width */
 @media screen and (min-width: 962px) {
   footer ul {
     display: inline-block;
@@ -210,20 +220,24 @@ a:link {
     float: left;
   }
   .work {
+    height: 100%;
     display: flex;
-    margin-right: 10%;
+    margin-left: 15%;
   }
   .work h2 {
     text-align: start;
     margin-right: 10%;
   }
+
   .work ul li {
-    justify-content: right;
-    width: 500px;
-    height: 450px;
-    margin-left: 50px;
+    margin-bottom: 30px;
   }
-  #code-refactor {
-    flex-grow: 3;
+
+  .work ul li img {
+    justify-content: right;
+    width: 700px;
+    height: 700px;
+    margin-bottom: 25px;
+    margin-left: 50px;
   }
 }
