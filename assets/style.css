@@ -1,88 +1,96 @@
 /* setting our display and background style */
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: #fbeec1;
-  box-shadow: inset 0px 0px 50px #8d8741, 0 0 50px #8d8741;
+  background-color: #2c3531;
+  /* box-shadow: inset 0px 0px 50px #8d8741, 0 0 50px #8d8741; */
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* header background and layout */
-.header {
-  background-color: #daad86;
-  padding-top: 25px;
-  padding-bottom: 15px;
-  box-shadow: inset 0.1rem 0.1rem 0.1rem 0.25rem #8d705763;
-}
-
-/* giving the header title (my name) style, using flex */
-.header h1 {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-  font-size: 50px;
-  color: #659dbd;
-  background-color: #fbeec1;
-  box-shadow: inset 0em 0.1rem 0.1rem 0.25rem #8d705763;
-}
-
 /* setting our nav section layout */
-nav {
-  display: flex;
-  justify-content: space-around;
-  background-color: #8d705785;
+.navbar {
+  margin-top: 15px;
+  padding-bottom: 15px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin-top: 20px;
-  box-shadow: inset 0em 0.1rem 0.1rem 0.25rem #daad863d;
 }
 
 /* setting nav link font size and margins */
-nav ul li {
-  font-size: 30px;
-  margin-bottom: 15px;
-  margin-top: 15px;
+.navbar-link {
+  font-size: 25px;
+  color: #d1e8e2;
+  font-weight: bold;
+  text-shadow: 0 0 2px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 52px #d1e8e2,
+    0 0 82px #d1e8e2, 0 0 92px #d1e8e2, 0 0 102px #d1e8e2, 0 0 151px #d1e8e2;
 }
 
-/* about me section layout using flexbox */
-.aboutme {
+a:link,
+a:link:hover,
+a:visited {
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  color: #116466;
+  font-weight: bolder;
+  text-shadow: 0 0 5px black, 0 0 1px black 0 0 2px black 0 0 52px #116466,
+    0 0 82px #116466, 0 0 92px #116466, 0 0 102px #116466, 0 0 151px #116466;
+}
+
+.work-content {
+  justify-content: space-around;
+}
+
+.work-title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  color: #857d96;
+}
+
+.card {
+  background-color: #116466;
+}
+
+.btn {
+  color: #116466;
+  background-color: #d1e8e2;
+}
+/* about me section layout using flexbox*/
+/* .aboutme {
   display: flexbox;
   font-size: 20px;
   margin-top: 5%;
   margin-left: 5%;
   padding: 5px 5px 5px 5px;
-}
+} */
 
 /* styling my proflie image */
-.aboutme img {
+/* .aboutme img {
   align-content: center;
   width: 200px;
   height: 250px;
   border-style: dotted;
   border-radius: 50%;
   box-shadow: inset 0px 0px 50px #8d8741, 0 0 50px #8d8741;
-}
+} */
 
 /* styling about me section header */
-.aboutme h2 {
+/* .aboutme h2 {
   flex-wrap: wrap;
   font-size: 45px;
   margin-right: 10px;
   margin-bottom: 50px;
-}
+} */
 
 /* setting our line height and text indent for the paragraph about me */
-.aboutme p {
+/* .aboutme p {
   text-indent: 25px;
   line-height: 35px;
   margin-left: 5%;
   margin-right: 10%;
   border-left: 4px solid #8d87417e;
   font-size: 25px;
-}
+} */
 
 /* setting our work section layout */
-.work {
+/* .work {
   display: flex;
   flex-flow: row wrap;
   font-size: 20px;
@@ -90,33 +98,33 @@ nav ul li {
   margin-bottom: 5%;
   margin-left: 10%;
   padding: 5px 5px 5px 5px;
-}
+} */
 
 /* styling work header */
-.work h2 {
+/* .work h2 {
   margin: 15px;
   margin-bottom: 100px;
   text-align: center;
   font-size: 45px;
-}
+} */
 
 /* setting a border to the left of our work content */
-.work ul {
+/* .work ul {
   border-left: 4px solid #8d87417e;
-}
+} */
 
 /* setting our image links relative to a smaller screen device */
-.work ul li img {
+/* .work ul li img {
   object-fit: cover;
   margin-bottom: 15px;
   margin-left: 5px;
   width: 300px;
   height: 300px;
   border-radius: 50%;
-}
+} */
 
 /* styling our work content headers to be positioned with their relative image */
-.work h3 {
+/* .work h3 {
   float: right;
   color: #659dbd;
   font-size: 25px;
@@ -125,10 +133,10 @@ nav ul li {
   padding-inline-end: 15px;
   background-color: #daad86;
   border-radius: 25%;
-}
+} */
 
 /* setting a box shadow when the user hovers over the image while the headers are always shadowed */
-#code-refactor img:hover,
+/* #code-refactor img:hover,
 h3 {
   box-shadow: inset 0px 0px 30px #8d8741, 0 0 30px #8d8741;
 }
@@ -139,10 +147,10 @@ h3 {
 
 #coming-soon img:hover {
   box-shadow: inset 0px 0px 30px #8d8741, 0 0 30px #8d8741;
-}
+} */
 
 /* setting our fotter layout */
-footer {
+/* footer {
   display: flexbox;
   background-color: #8d8741;
   padding: 30px;
@@ -150,10 +158,10 @@ footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-align: center;
-}
+} */
 
 /* footer header to be centered and have its own inset box shadow */
-footer h2 {
+/* footer h2 {
   color: #659dbd;
   text-align: center;
   background-color: #daad86;
@@ -162,27 +170,27 @@ footer h2 {
   box-shadow: inset 10rem 0rem 0rem 0rem #8d705757;
   font-size: 40px;
   border-radius: 50%;
-}
+} */
 
 /* setting my contact links style */
-footer ul li {
+/* footer ul li {
   justify-content: space-around;
   font-size: 25px;
   margin: 15px;
-}
+} */
 
 /* adding color to every link on the website */
-a {
+/* a {
   color: #266488;
-}
+} */
 
 /* removing the underline of each link in the website */
-a:link {
+/* a:link {
   text-decoration: none;
-}
+} */
 
 /* screen responsivity above 768px in width */
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   nav {
     display: block;
     flex-direction: column;
@@ -208,10 +216,10 @@ a:link {
     width: 400px;
     height: 400px;
   }
-}
+} */
 
 /* screen responsivity above 962px in width */
-@media screen and (min-width: 962px) {
+/* @media screen and (min-width: 962px) {
   footer ul {
     display: inline-block;
     flex-direction: column;
@@ -239,5 +247,5 @@ a:link {
     height: 700px;
     margin-bottom: 25px;
     margin-left: 50px;
-  }
-}
+  } 
+} */
