@@ -17,8 +17,8 @@ body {
   font-size: 25px;
   color: #d1e8e2;
   font-weight: bold;
-  text-shadow: 0 0 2px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 52px #d1e8e2,
-    0 0 82px #d1e8e2, 0 0 92px #d1e8e2, 0 0 102px #d1e8e2, 0 0 151px #d1e8e2;
+  text-shadow: 0 0 2px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 12px #464866,
+    0 0 22px #464866, 0 0 2px #464866, 0 0 120px #464866, 0 0 15px #464866;
 }
 
 a:link,
@@ -30,10 +30,36 @@ a:visited {
 .navbar-link:hover {
   color: #116466;
   font-weight: bolder;
-  text-shadow: 0 0 5px black, 0 0 1px black 0 0 2px black 0 0 52px #116466,
-    0 0 82px #116466, 0 0 92px #116466, 0 0 102px #116466, 0 0 151px #116466;
 }
 
+.introduction {
+  margin-top: 30px;
+}
+
+.introduction h1 {
+  color: white;
+  text-align: center;
+}
+
+.photo {
+  text-align: center;
+}
+
+.photo img {
+  height: 15px;
+  border-radius: 50%;
+}
+
+#name {
+  color: #bc4639;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-shadow: 0 0 2px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 12px #bc4639,
+    0 0 22px #bc4639, 0 0 2px #bc4639, 0 0 120px #bc4639, 0 0 15px #bc4639;
+}
+
+.work {
+  margin-top: 15%;
+}
 .work-content {
   justify-content: space-around;
 }
@@ -43,13 +69,23 @@ a:visited {
   text-align: center;
   color: #857d96;
 }
-
 .card {
-  background-color: #116466;
+  color: white;
+  background-color: #9755d1;
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 52px #464866,
+    0 0 72px #464866, 0 0 82px #464866, 0 0 92px #464866, 0 0 102px #464866;
+  margin-top: 50px;
+}
+
+.card:hover {
+  box-shadow: 0 0 7px #fff, 0 0 25px #fff, 0 0 25px #fff, 0 0 52px #464866,
+    0 0 82px #464866, 0 0 92px #464866, 0 0 102px #464866, 0 0 151px #464866;
+  transition: box-shadow 0.6s, transform 0.6s;
+  transform: translateY(-10px);
 }
 
 .btn {
-  color: #116466;
+  color: #9755d1;
   background-color: #d1e8e2;
 }
 /* about me section layout using flexbox*/
