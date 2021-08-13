@@ -12,34 +12,55 @@
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-light">
+    <nav class="navbar sticky-top navbar-light">
       <div class="container">
-        <a class="navbar-link" href="#">About</a>
-        <a class="navbar-link" href="#">Work</a>
-        <a class="navbar-link" href="#">Contact</a>
+        <div class="row-fluid">
+          <a class="navbar-link" href="#">About</a>
+          <a class="navbar-link" href="#">Work</a>
+          <a class="navbar-link" href="#">Contact</a>
+        </div>
       </div>
     </nav>
 
     <section class="introduction container-fluid">
       <h1>Hello, my name is <span id="name">Oscar Vizcaino</span></h1>
-      <div class="photo">
-        <img src="./assets/images/image0.jpg" alt="oscar_photo" />
+
+      <div class="row icon-links">
+        <a id="icon-link" href="https://github.com/oscarV42" target="blank"
+          ><img src="./assets/images/github.png" alt="github"
+        /></a>
+        <a
+          id="icon-link"
+          href="https://www.linkedin.com/in/oscar-vizcaino-9bb562214/"
+          target="blank"
+          ><img src="./assets/images/linkedin.png" alt="linkedin"
+        /></a>
+        <a id="icon-link" href="#" target="blank"
+          ><img src="./assets/images/FinalResumeicon.png" alt="resume"
+        /></a>
+      </div>
+
+      <div class="photo row-fluid">
+        <img src="./assets/images/Mejpg.jpg" alt="oscar_photo" />
       </div>
     </section>
     <section class="about-me container-fluid">
-      <h2>About Me</h2>
+      <div class="container">
+        <h2>About Me</h2>
 
-      <p>
-        I'm a hispanic web developer currently enrolled in Georgia Tech
-        Bootcamp. I have some experience in Visual Basics and C/C++ from
-        attending Edmonds Community College. Web development is an art and I
-        love to see all the progress from creating and collaborating on
-        projects.
-      </p>
+        <p>
+          I'm a hispanic web developer currently enrolled in Georgia Tech coding
+          Bootcamp. I have some experience in Visual Basics and C/C++ from
+          attending Edmonds Community College. Web development is an art and I
+          love to see all the progress from creating and collaborating on
+          projects. I don't have any professional work experience in this field
+          but I'm open to new opportunities.
+        </p>
+      </div>
     </section>
 
     <section class="container-fluid work">
-      <!-- <h1 class="work-title">My Work</h1> -->
+      <h1 class="work-title">My Work</h1>
       <div class="row work-content">
         <div class="card weather" style="width: 28rem">
           <img
@@ -54,8 +75,8 @@
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
-            <a href="#" class="btn">Web application</a>
-            <a href="#" class="btn">Repository</a>
+            <a href="" class="btn">Web application</a>
+            <a href="" class="btn">Repository</a>
           </div>
         </div>
         <div class="card" style="width: 28rem">
@@ -70,8 +91,18 @@
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
-            <a href="#" class="btn">Web application</a>
-            <a href="#" class="btn">Repository</a>
+            <a
+              href="https://oscarv42.github.io/Work-Day-Scheduler/"
+              target="blank"
+              class="btn"
+              >Web application</a
+            >
+            <a
+              href="https://github.com/oscarV42/Work-Day-Scheduler"
+              target="blank"
+              class="btn"
+              >Repository</a
+            >
           </div>
         </div>
         <div class="card" style="width: 28rem">
