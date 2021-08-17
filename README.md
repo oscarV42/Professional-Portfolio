@@ -1,13 +1,21 @@
 # Professional-Portfolio
 
-Purpose of this website was to create a standard portfolio that can be improved in the near future
+## Description
 
-This project was built to stand out to companies and show the work I have done in my interested field
+Purpose of this website was to create a standard portfolio that can be improved in the near future.
+This project was built to stand out to companies and show the work I have done in my field of interest. This web app was
+designed using updated HTML and CSS along with a third party API stylesheet, Bootstrap.
 
-I learned a little more about flex properties, they may still be confusing but I am getting more comfortable each time I am using it
+## Technologies
 
-Although the page my look amature, it's a start and can always be improved as i continue to do more work.
+-HTML
+-CSS
 
-<img src="assets\images\Capture.PNG" alt="website screenshot">
+## Screenshots
+
+<img src="assets\images\Portfolio.PNG" alt="website screenshot">
+<img src="assets\images\Portfolio2.PNG" alt="website screenshot">
+
+## Deployed page link
 
 https://oscarv42.github.io/Professional-Portfolio/
