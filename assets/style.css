@@ -85,10 +85,14 @@ a:visited {
 
 .about-me h2 {
   font-size: 40px;
+  padding: 10px;
   text-align: center;
 }
 
 .about-me p {
+  padding: 5px;
+  border: 3px solid black;
+  border-radius: 20px;
   font-size: 25px;
   text-align: center;
 }
@@ -111,7 +115,7 @@ a:visited {
   color: white;
   background-color: #8d4004;
   box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 22px #704a4c,
-    0 0 42px #704a4c, 0 0 52px #464866, 0 0 62px #464866, 0 0 72px #464866;
+    0 0 32px #704a4c, 0 0 42px #464866, 0 0 52px #464866, 0 0 62px #464866;
   margin-top: 50px;
 }
 
@@ -142,201 +146,5 @@ footer {
 .footer-link {
   color: #d1e8e2;
   font-weight: bold;
+  padding: 10px;
 }
-/* about me section layout using flexbox*/
-/* .aboutme {
-  display: flexbox;
-  font-size: 20px;
-  margin-top: 5%;
-  margin-left: 5%;
-  padding: 5px 5px 5px 5px;
-} */
-
-/* styling my proflie image */
-/* .aboutme img {
-  align-content: center;
-  width: 200px;
-  height: 250px;
-  border-style: dotted;
-  border-radius: 50%;
-  box-shadow: inset 0px 0px 50px #8d8741, 0 0 50px #8d8741;
-} */
-
-/* styling about me section header */
-/* .aboutme h2 {
-  flex-wrap: wrap;
-  font-size: 45px;
-  margin-right: 10px;
-  margin-bottom: 50px;
-} */
-
-/* setting our line height and text indent for the paragraph about me */
-/* .aboutme p {
-  text-indent: 25px;
-  line-height: 35px;
-  margin-left: 5%;
-  margin-right: 10%;
-  border-left: 4px solid #8d87417e;
-  font-size: 25px;
-} */
-
-/* setting our work section layout */
-/* .work {
-  display: flex;
-  flex-flow: row wrap;
-  font-size: 20px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 10%;
-  padding: 5px 5px 5px 5px;
-} */
-
-/* styling work header */
-/* .work h2 {
-  margin: 15px;
-  margin-bottom: 100px;
-  text-align: center;
-  font-size: 45px;
-} */
-
-/* setting a border to the left of our work content */
-/* .work ul {
-  border-left: 4px solid #8d87417e;
-} */
-
-/* setting our image links relative to a smaller screen device */
-/* .work ul li img {
-  object-fit: cover;
-  margin-bottom: 15px;
-  margin-left: 5px;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-} */
-
-/* styling our work content headers to be positioned with their relative image */
-/* .work h3 {
-  float: right;
-  color: #659dbd;
-  font-size: 25px;
-  position: relative;
-  padding-inline-start: 25px;
-  padding-inline-end: 15px;
-  background-color: #daad86;
-  border-radius: 25%;
-} */
-
-/* setting a box shadow when the user hovers over the image while the headers are always shadowed */
-/* #code-refactor img:hover,
-h3 {
-  box-shadow: inset 0px 0px 30px #8d8741, 0 0 30px #8d8741;
-}
-
-#flexbox-cheatsheet img:hover {
-  box-shadow: inset 0px 0px 30px #8d8741, 0 0 30px #8d8741;
-}
-
-#coming-soon img:hover {
-  box-shadow: inset 0px 0px 30px #8d8741, 0 0 30px #8d8741;
-} */
-
-/* setting our fotter layout */
-/* footer {
-  display: flexbox;
-  background-color: #8d8741;
-  padding: 30px;
-  clear: both;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-align: center;
-} */
-
-/* footer header to be centered and have its own inset box shadow */
-/* footer h2 {
-  color: #659dbd;
-  text-align: center;
-  background-color: #daad86;
-  margin-bottom: 10px;
-  padding: 5px 5px 5px 5px;
-  box-shadow: inset 10rem 0rem 0rem 0rem #8d705757;
-  font-size: 40px;
-  border-radius: 50%;
-} */
-
-/* setting my contact links style */
-/* footer ul li {
-  justify-content: space-around;
-  font-size: 25px;
-  margin: 15px;
-} */
-
-/* adding color to every link on the website */
-/* a {
-  color: #266488;
-} */
-
-/* removing the underline of each link in the website */
-/* a:link {
-  text-decoration: none;
-} */
-
-/* screen responsivity above 768px in width */
-/* @media screen and (min-width: 768px) {
-  nav {
-    display: block;
-    flex-direction: column;
-  }
-  nav ul li {
-    float: right;
-    margin-right: 25px;
-  }
-  .aboutme {
-    display: inline-flex;
-  }
-  .aboutme img {
-    margin-right: 5%;
-    width: 400px;
-    height: 400px;
-  }
-
-  .work ul li {
-    margin-bottom: 25px;
-  }
-
-  .work ul li img {
-    width: 400px;
-    height: 400px;
-  }
-} */
-
-/* screen responsivity above 962px in width */
-/* @media screen and (min-width: 962px) {
-  footer ul {
-    display: inline-block;
-    flex-direction: column;
-  }
-  footer ul li {
-    float: left;
-  }
-  .work {
-    height: 100%;
-    display: flex;
-    margin-left: 15%;
-  }
-  .work h2 {
-    text-align: start;
-    margin-right: 10%;
-  }
-
-  .work ul li {
-    margin-bottom: 30px;
-  }
-
-  .work ul li img {
-    justify-content: right;
-    width: 700px;
-    height: 700px;
-    margin-bottom: 25px;
-    margin-left: 50px;
-  } 
-} */
