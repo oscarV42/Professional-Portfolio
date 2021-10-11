@@ -13,9 +13,9 @@ body {
   background-color: rgba(0, 0, 0, 0.377);
 }
 
-.navbar .container {
+/* .navbar .container {
   justify-content: center;
-}
+} */
 
 /* setting nav link font size and margins */
 .navbar-link {

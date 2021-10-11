@@ -7,20 +7,28 @@
     <title>Oscar Vizcaino</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-light">
-      <div class="container">
-        <div class="row">
-          <a class="navbar-link" href="#about-me">About</a>
-          <a class="navbar-link" href="#work">Work</a>
-          <a class="navbar-link" href="#contact">Contact</a>
-        </div>
+    <nav class="navbar-wrapper navbar">
+      <a href="#" class="brand-logo center navbar-link">Home</a>
+      <a href="#mobile-nav" data-target="mobile-demo" class="sidenav-trigger"
+        ><i class="material-icons">menu</i></a
+      >
+      <div class="row hide-on-med-and-down">
+        <a class="navbar-link" href="#about-me">About</a>
+        <a class="navbar-link" href="#work">Work</a>
+        <a class="navbar-link" href="#contact">Contact</a>
       </div>
     </nav>
+
+    <div class="row sidenav" id="mobile-nav">
+      <a class="navbar-link" href="#about-me">About</a>
+      <a class="navbar-link" href="#work">Work</a>
+      <a class="navbar-link" href="#contact">Contact</a>
+    </div>
 
     <section class="introduction container-fluid">
       <h1>Hello, my name is <span id="name">Oscar Vizcaino</span></h1>
@@ -50,12 +58,13 @@
 
         <p>
           I'm a hispanic web developer currently enrolled in Georgia Tech coding
-          Bootcamp. Technologies I use for web development are HTML, CSS, and
-          JavaScript/JQuery. I have some experience in Visual Basics and C/C++
-          from attending Edmonds Community College. Web development is an art
-          and I love to see all the progress from creating and collaborating on
-          projects. I don't have any professional work experience in this field
-          but I'm open to new opportunities.
+          Bootcamp. Technologies I use for web development are HTML, CSS,
+          JavaScript/JQuery, Express.js, Node.js, and MYSQL. I have some
+          experience in Visual Basics and C/C++ from attending Edmonds Community
+          College. Web development is an art and I love to see all the progress
+          from creating and collaborating on projects. I don't have any
+          professional work experience in this field but I'm open to new
+          opportunities.
         </p>
       </div>
     </section>
@@ -64,13 +73,14 @@
       <h1 class="work-title">My Work</h1>
       <div class="row work-content">
         <div class="card weather" style="width: 28rem">
-          <img
-            src="./assets/images/WeatherDash.PNG"
-            class="card-img-top"
-            alt="WeatherDash"
-          />
-
-          <div class="card-body">
+          <div class="card-image">
+            <img
+              src="./assets/images/WeatherDash.PNG"
+              class="card-img-top"
+              alt="WeatherDash"
+            />
+          </div>
+          <div class="card-content">
             <h5 class="card-title">Weather Dashboard</h5>
             <p class="card-text">
               Search a location of your interest, and see today's weather plus
@@ -91,12 +101,14 @@
           </div>
         </div>
         <div class="card" style="width: 28rem">
-          <img
-            src="./assets/images/Workday.PNG"
-            class="card-img-top"
-            alt="WorkdayScheduler"
-          />
-          <div class="card-body">
+          <div class="card-image">
+            <img
+              src="./assets/images/Workday.PNG"
+              class="card-img-top"
+              alt="WorkdayScheduler"
+            />
+          </div>
+          <div class="card-content">
             <h5 class="card-title">Workday Planner</h5>
             <p class="card-text">
               A simple calendar application that allows a user to save events
@@ -117,12 +129,14 @@
           </div>
         </div>
         <div class="card" style="width: 28rem">
-          <img
-            src="./assets/images/Trail-Finder.png"
-            class="card-img-top"
-            alt="TrailFinder"
-          />
-          <div class="card-body">
+          <div class="card-image">
+            <img
+              src="./assets/images/Trail-Finder.png"
+              class="card-img-top"
+              alt="TrailFinder"
+            />
+          </div>
+          <div class="card-content">
             <h5 class="card-title">Trail Finder</h5>
             <p class="card-text">
               A collaborative project, featuring an app that helps endures of
@@ -143,12 +157,14 @@
           </div>
         </div>
         <div class="card" style="width: 28rem">
-          <img
-            src="./assets/images/Code-Quiz.PNG"
-            class="card-img-top"
-            alt="TrailFinder"
-          />
-          <div class="card-body">
+          <div class="card-image">
+            <img
+              src="./assets/images/Code-Quiz.PNG"
+              class="card-img-top"
+              alt="TrailFinder"
+            />
+          </div>
+          <div class="card-content">
             <h5 class="card-title">Code Quiz</h5>
             <p class="card-text">
               An interactive code assessment which includes mulitple-choice
@@ -169,12 +185,14 @@
           </div>
         </div>
         <div class="card" style="width: 28rem">
-          <img
-            src="./assets/images/03-javascript-homework-demo.png"
-            class="card-img-top"
-            alt="TrailFinder"
-          />
-          <div class="card-body">
+          <div class="card-image">
+            <img
+              src="./assets/images/03-javascript-homework-demo.png"
+              class="card-img-top"
+              alt="TrailFinder"
+            />
+          </div>
+          <div class="card-content">
             <h5 class="card-title">Password Generator</h5>
             <p class="card-text">
               An application that enables employees to generate random passwords
@@ -208,10 +226,6 @@
       </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>
