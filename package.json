@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/oscarV42/Professional-Portfolio/issues"
   },
-  "homepage": "https://github.com/oscarV42/Professional-Portfolio#readme"
+  "homepage": "https://github.com/oscarV42/Professional-Portfolio#readme",
+  "dependencies": {
+    "animejs": "^3.2.1"
+  }
 }
