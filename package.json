@@ -1,0 +1,19 @@
+{
+  "name": "professional-portfolio",
+  "version": "1.0.0",
+  "description": "Purpose of this website was to create a standard portfolio that can be improved in the near future.\r This project was built to stand out to companies and show the work I have done in my field of interest. This web app was\r designed using updated HTML and CSS along with a third party API stylesheet, Bootstrap.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscarV42/Professional-Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscarV42/Professional-Portfolio/issues"
+  },
+  "homepage": "https://github.com/oscarV42/Professional-Portfolio#readme"
+}

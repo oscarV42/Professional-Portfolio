@@ -9,12 +9,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <nav class="navbar-wrapper navbar">
       <a href="#" class="brand-logo center navbar-link">Home</a>
-      <a href="#mobile-nav" data-target="mobile-demo" class="sidenav-trigger"
+      <a href="#" data-target="mobile-nav" class="sidenav-trigger"
         ><i class="material-icons">menu</i></a
       >
       <div class="row hide-on-med-and-down">
@@ -24,16 +28,16 @@
       </div>
     </nav>
 
-    <div class="row sidenav" id="mobile-nav">
-      <a class="navbar-link" href="#about-me">About</a>
-      <a class="navbar-link" href="#work">Work</a>
-      <a class="navbar-link" href="#contact">Contact</a>
-    </div>
+    <ul class="sidenav navbar" id="mobile-nav">
+      <a class="navbar-link about-mobile" href="#about-me">About</a>
+      <a class="navbar-link work-mobile" href="#work">Work</a>
+      <a class="navbar-link contact-mobile" href="#contact">Contact</a>
+    </ul>
 
     <section class="introduction container-fluid">
       <h1>Hello, my name is <span id="name">Oscar Vizcaino</span></h1>
 
-      <div class="row icon-links">
+      <div class="row center-align icon-links">
         <a id="icon-link" href="https://github.com/oscarV42" target="blank"
           ><img src="./assets/images/github.png" alt="github"
         /></a>
@@ -69,10 +73,11 @@
       </div>
     </section>
 
-    <section class="container work" id="work">
+    <section class="row work" id="work">
       <h1 class="work-title">My Work</h1>
-      <div class="row work-content">
-        <div class="card weather" style="width: 28rem">
+      <div class="container work-content">
+        <div class="card">
+          <!-- style="width: 28rem" -->
           <div class="card-image">
             <img
               src="./assets/images/WeatherDash.PNG"
@@ -86,6 +91,8 @@
               Search a location of your interest, and see today's weather plus
               five day forecast.
             </p>
+          </div>
+          <div class="card-action">
             <a
               href="https://oscarv42.github.io/Weather-Dashboard/"
               target="blank"
@@ -100,7 +107,7 @@
             >
           </div>
         </div>
-        <div class="card" style="width: 28rem">
+        <div class="card">
           <div class="card-image">
             <img
               src="./assets/images/Workday.PNG"
@@ -114,6 +121,8 @@
               A simple calendar application that allows a user to save events
               for each hour of the work day.
             </p>
+          </div>
+          <div class="card-action">
             <a
               href="https://oscarv42.github.io/Work-Day-Scheduler/"
               target="blank"
@@ -128,7 +137,7 @@
             >
           </div>
         </div>
-        <div class="card" style="width: 28rem">
+        <div class="card">
           <div class="card-image">
             <img
               src="./assets/images/Trail-Finder.png"
@@ -142,6 +151,8 @@
               A collaborative project, featuring an app that helps endures of
               the outdoors to search for hiking trails.
             </p>
+          </div>
+          <div class="card-action">
             <a
               href="https://jyothybaby.github.io/Trail-Finder/"
               target="blank"
@@ -156,7 +167,7 @@
             >
           </div>
         </div>
-        <div class="card" style="width: 28rem">
+        <div class="card">
           <div class="card-image">
             <img
               src="./assets/images/Code-Quiz.PNG"
@@ -170,6 +181,8 @@
               An interactive code assessment which includes mulitple-choice
               questions and a timer that determines the users score.
             </p>
+          </div>
+          <div class="card-action">
             <a
               href="https://oscarv42.github.io/Code-Quiz/"
               target="blank"
@@ -184,7 +197,7 @@
             >
           </div>
         </div>
-        <div class="card" style="width: 28rem">
+        <div class="card">
           <div class="card-image">
             <img
               src="./assets/images/03-javascript-homework-demo.png"
@@ -198,6 +211,8 @@
               An application that enables employees to generate random passwords
               based on criteria that they’ve selected.
             </p>
+          </div>
+          <div class="card-action">
             <a
               href="https://oscarv42.github.io/Password-Generator/"
               target="blank"
@@ -226,6 +241,13 @@
       </div>
     </footer>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
+      integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

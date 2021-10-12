@@ -13,10 +13,6 @@ body {
   background-color: rgba(0, 0, 0, 0.377);
 }
 
-/* .navbar .container {
-  justify-content: center;
-} */
-
 /* setting nav link font size and margins */
 .navbar-link {
   padding: 20px;
@@ -95,6 +91,7 @@ a:visited {
   border-radius: 20px;
   font-size: 25px;
   text-align: center;
+  line-height: 45px;
 }
 
 .work {
@@ -114,20 +111,37 @@ a:visited {
   flex-wrap: wrap;
   color: white;
   background-color: #8d4004;
-  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 22px #704a4c,
-    0 0 32px #704a4c, 0 0 42px #464866, 0 0 52px #464866, 0 0 62px #464866;
-  margin-top: 50px;
+  box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 11px #fff, 0 0 12px #704a4c,
+    0 0 12px #704a4c, 0 0 22px #464866, 0 0 32px #464866, 0 0 42px #464866;
+  margin-top: 55px;
 }
 
 .card:hover {
-  box-shadow: 0 0 7px #fff, 0 0 25px #fff, 0 0 25px #fff, 0 0 42px #464866,
-    0 0 72px #464866, 0 0 82px #464866, 0 0 92px #464866, 0 0 102px #464866;
+  box-shadow: 0 0 7px #fff, 0 0 15px #fff, 0 0 15px #fff, 0 0 32px #464866,
+    0 0 72px #464866, 0 0 62px #464866, 0 0 72px #464866, 0 0 82px #464866;
   transition: box-shadow 0.6s, transform 0.6s;
   transform: translateY(-10px);
 }
 
+.card-text {
+  font-size: 18px;
+}
+
 .btn {
   color: #8d4004;
+  background-color: #d1e8e2;
+}
+
+.btn:visited {
+  background-color: #d1e8e2;
+}
+.btn:hover {
+  background-color: #d1e8e2;
+}
+.btn:active {
+  background-color: #d1e8e2;
+}
+.btn:focus {
   background-color: #d1e8e2;
 }
 
